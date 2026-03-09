@@ -197,9 +197,9 @@ export default function Home() {
           <p className="text-[17px] text-[#2a2a2a] leading-[1.4] max-w-[420px] mb-8 font-medium">
             A free assessment that uncovers automation opportunities and maps your path to operational excellence.
           </p>
-          <button className="bg-white text-black px-8 py-4 rounded-full text-[16px] font-bold shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300">
+          <a href="https://cal.com/lavparab/free-ai-automation-audit-with-lavparab" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-white text-black px-8 py-4 rounded-full text-[16px] font-bold shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300">
             Book a Free Audit
-          </button>
+          </a>
 
           <div className="absolute -bottom-12 -right-12 md:top-1/4 md:-right-20 text-[100px] md:text-[180px] font-black text-black/5 tracking-tighter leading-none select-none pointer-events-none">
             flowwork
@@ -219,11 +219,45 @@ export default function Home() {
             </p>
             {/* Social Icons would go here */}
           </div>
-          <div className="max-w-[360px] w-full">
-            <label className="block text-[14px] font-bold text-[#1a1a1a] mb-3 uppercase tracking-wider">Subscribe for our newsletter</label>
-            <div className="flex bg-white rounded-full p-1.5 shadow-sm border border-[#eaeaea]">
-              <input type="email" placeholder="Enter your email" className="bg-transparent border-none outline-none px-4 text-[14px] text-[#1a1a1a] flex-1" />
-              <button className="bg-[#1a1a1a] text-white px-5 py-2.5 rounded-full text-[13px] font-bold hover:bg-[#333] transition-colors">Subscribe</button>
+          <div className="max-w-[400px] w-full">
+            <label className="block text-[14px] font-bold text-[#1a1a1a] mb-5 uppercase tracking-wider">Contact Us</label>
+
+            {/* LinkedIn Profiles */}
+            <div className="flex flex-col gap-3 mb-5">
+              <a href="https://www.linkedin.com/in/atharva-patil-n23/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors">
+                  <svg className="w-4 h-4 text-[#0a66c2] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+                </span>
+                Atharva Patil
+              </a>
+              <a href="https://www.linkedin.com/in/lavparab/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors">
+                  <svg className="w-4 h-4 text-[#0a66c2] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+                </span>
+                Lav Parab
+              </a>
+              <a href="https://www.linkedin.com/company/flowworkk/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors">
+                  <svg className="w-4 h-4 text-[#0a66c2] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+                </span>
+                Flowwork AI
+              </a>
+            </div>
+
+            {/* Email Addresses */}
+            <div className="flex flex-col gap-2.5">
+              <a href="mailto:atharvapatil.flowwork@gmail.com" className="inline-flex items-center gap-2.5 text-[14px] font-medium text-[#555] hover:text-[#1a1a1a] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#1a1a1a] transition-colors">
+                  <svg className="w-4 h-4 text-[#555] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" /></svg>
+                </span>
+                atharvapatil.flowwork@gmail.com
+              </a>
+              <a href="mailto:lavparab.flowwork@gmail.com" className="inline-flex items-center gap-2.5 text-[14px] font-medium text-[#555] hover:text-[#1a1a1a] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#1a1a1a] transition-colors">
+                  <svg className="w-4 h-4 text-[#555] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" /></svg>
+                </span>
+                lavparab.flowwork@gmail.com
+              </a>
             </div>
           </div>
         </div>

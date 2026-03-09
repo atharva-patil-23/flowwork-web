@@ -69,12 +69,14 @@ export function Navbar() {
 
                             {/* CTA Button */}
                             <div className="flex-1 flex justify-end">
-                                <Link
-                                    href="#cta"
+                                <a
+                                    href="https://cal.com/lavparab/free-ai-automation-audit-with-lavparab"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="relative z-30 inline-flex items-center justify-center bg-[#c8f74a] text-black px-6 py-2.5 rounded-full text-[13px] font-bold shadow-[0_2px_8px_rgba(200,247,74,0.2)] hover:bg-[#b5e042] hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_6px_16px_rgba(200,247,74,0.4)] transition-all duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.2)]"
                                 >
                                     Book a Free Audit
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </GlassEffect>
