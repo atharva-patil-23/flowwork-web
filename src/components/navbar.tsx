@@ -66,7 +66,7 @@ export function Navbar() {
                             </div>
 
                             {/* Desktop Links */}
-                            <nav className="hidden md:flex flex-none items-center justify-center gap-8 relative z-30">
+                            <nav aria-label="Main navigation" className="hidden md:flex flex-none items-center justify-center gap-8 relative z-30">
                                 <Link
                                     href="#services"
                                     className="text-[14px] text-black font-semibold hover:text-[#2a3d0a] transition-colors"
@@ -103,6 +103,7 @@ export function Navbar() {
                                     onClick={() => setMobileOpen(!mobileOpen)}
                                     className="md:hidden relative z-30 flex flex-col justify-center items-center w-10 h-10 rounded-xl bg-transparent border-none cursor-pointer gap-[5px]"
                                     aria-label="Toggle menu"
+                                    aria-expanded={mobileOpen}
                                 >
                                     <span className={`block w-5 h-[2px] bg-[#1a1a1a] rounded-full transition-all duration-300 ${mobileOpen ? "translate-y-[7px] rotate-45" : ""}`} />
                                     <span className={`block w-5 h-[2px] bg-[#1a1a1a] rounded-full transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
@@ -119,7 +120,7 @@ export function Navbar() {
                 className={`fixed inset-0 z-40 bg-[#f0ede8]/95 backdrop-blur-lg flex flex-col items-center justify-center gap-6 transition-all duration-300 md:hidden ${mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                     }`}
             >
-                <nav className="flex flex-col items-center gap-6">
+                <nav aria-label="Mobile navigation" className="flex flex-col items-center gap-6">
                     <Link
                         href="#services"
                         onClick={() => setMobileOpen(false)}
