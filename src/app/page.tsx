@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative flex flex-col items-center justify-center text-center min-h-[auto] lg:min-h-screen w-full px-5 sm:px-6 overflow-hidden pt-20 sm:pt-20 pb-12 sm:pb-0">
-        <div className="relative z-20 flex flex-col items-center mt-4 sm:mt-8 lg:mt-0 pointer-events-none">
+      <section className="relative flex flex-col items-center justify-center text-center min-h-[100svh] w-full px-5 sm:px-6 overflow-hidden pt-16 sm:pt-20">
+        <div className="relative z-20 flex flex-col items-center pointer-events-none">
           <div className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-full bg-black/5 text-black/60 text-[11px] sm:text-[13px] font-bold tracking-wide uppercase shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_2px_8px_rgba(0,0,0,0.03)] border border-black/5 backdrop-blur-md mb-6 sm:mb-8 pointer-events-auto text-center">
             Move goods faster. Let AI handle the paperwork.
             <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
