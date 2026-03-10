@@ -74,6 +74,12 @@ export function Navbar() {
                                     Services
                                 </Link>
                                 <Link
+                                    href="#how-it-works"
+                                    className="text-[14px] text-black font-semibold hover:text-[#2a3d0a] transition-colors"
+                                >
+                                    How It Works
+                                </Link>
+                                <Link
                                     href="#problem"
                                     className="text-[14px] text-black font-semibold hover:text-[#2a3d0a] transition-colors"
                                 >
@@ -127,6 +133,13 @@ export function Navbar() {
                         className="text-[22px] font-bold text-[#1a1a1a] hover:text-[#8bc34a] transition-colors"
                     >
                         Services
+                    </Link>
+                    <Link
+                        href="#how-it-works"
+                        onClick={() => setMobileOpen(false)}
+                        className="text-[22px] font-bold text-[#1a1a1a] hover:text-[#8bc34a] transition-colors"
+                    >
+                        How It Works
                     </Link>
                     <Link
                         href="#problem"

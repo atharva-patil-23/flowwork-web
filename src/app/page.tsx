@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative flex flex-col items-center justify-center text-center min-h-screen w-full px-5 sm:px-6 overflow-hidden pt-24 sm:pt-20">
-        <div className="relative z-20 flex flex-col items-center mt-12 lg:mt-0 pointer-events-none">
+      <section className="relative flex flex-col items-center justify-center text-center min-h-[auto] lg:min-h-screen w-full px-5 sm:px-6 overflow-hidden pt-20 sm:pt-20 pb-12 sm:pb-0">
+        <div className="relative z-20 flex flex-col items-center mt-4 sm:mt-8 lg:mt-0 pointer-events-none">
           <div className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-full bg-black/5 text-black/60 text-[11px] sm:text-[13px] font-bold tracking-wide uppercase shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_2px_8px_rgba(0,0,0,0.03)] border border-black/5 backdrop-blur-md mb-6 sm:mb-8 pointer-events-auto text-center">
             Move goods faster. Let AI handle the paperwork.
             <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
@@ -142,6 +142,89 @@ export default function Home() {
               </div>
               <h3 className="text-[20px] md:text-[24px] font-bold text-[#1a1a1a] mb-3 leading-tight tracking-tight">Custom AI Agents</h3>
               <p className="text-[16px] text-[#4a4a4a] leading-relaxed">Bespoke AI systems trained on your trade lanes, products, and compliance rules.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ HOW IT WORKS ═══════════ */}
+      <section id="how-it-works" className="w-full py-16 sm:py-24 md:py-32 px-5 sm:px-6 md:px-[5%] flex flex-col items-center">
+        <div className="w-full max-w-[1100px]">
+          <p className="text-[#8bc34a] text-[13px] font-bold tracking-widest uppercase mb-4 text-center">How It Works</p>
+          <h2 className="text-[28px] sm:text-[32px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-tight tracking-[-0.02em] mb-4 text-center">
+            From Audit to<br className="hidden sm:block" /><span className="sm:hidden"> </span>Automation in 3 Steps
+          </h2>
+          <p className="text-[16px] sm:text-[18px] md:text-[20px] text-[#4a4a4a] leading-[1.5] max-w-[600px] mx-auto font-medium tracking-tight text-center mb-12 sm:mb-20">
+            A simple, proven process to transform your trade operations without disrupting your day-to-day.
+          </p>
+
+          <div className="hiw-steps-wrapper">
+            {/* Step 1 */}
+            <div className="hiw-step group">
+              <div className="hiw-number-ring">
+                <span className="hiw-number">1</span>
+              </div>
+              <div className="hiw-card">
+                <div className="hiw-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="M21 21l-4.35-4.35" />
+                    <path d="M11 8v6" />
+                    <path d="M8 11h6" />
+                  </svg>
+                </div>
+                <h3 className="text-[18px] md:text-[22px] font-bold text-[#1a1a1a] mb-2 leading-tight tracking-tight">Discovery &amp; Audit</h3>
+                <p className="text-[14px] md:text-[16px] text-[#4a4a4a] leading-relaxed">We map your current workflows, find bottlenecks, and identify the highest-ROI automation opportunities — free of charge.</p>
+              </div>
+            </div>
+
+            {/* Connector */}
+            <div className="hiw-connector" aria-hidden="true">
+              <div className="hiw-connector-line" />
+              <div className="hiw-connector-dot" />
+            </div>
+
+            {/* Step 2 */}
+            <div className="hiw-step group">
+              <div className="hiw-number-ring">
+                <span className="hiw-number">2</span>
+              </div>
+              <div className="hiw-card">
+                <div className="hiw-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <path d="M8 21h8" />
+                    <path d="M12 17v4" />
+                    <path d="M7 8l3 3-3 3" />
+                    <line x1="13" y1="13" x2="17" y2="13" />
+                  </svg>
+                </div>
+                <h3 className="text-[18px] md:text-[22px] font-bold text-[#1a1a1a] mb-2 leading-tight tracking-tight">Build &amp; Integrate</h3>
+                <p className="text-[14px] md:text-[16px] text-[#4a4a4a] leading-relaxed">Our team builds custom AI workflows and integrates them directly into your existing tools — no migration needed.</p>
+              </div>
+            </div>
+
+            {/* Connector */}
+            <div className="hiw-connector" aria-hidden="true">
+              <div className="hiw-connector-line" />
+              <div className="hiw-connector-dot" />
+            </div>
+
+            {/* Step 3 */}
+            <div className="hiw-step group">
+              <div className="hiw-number-ring">
+                <span className="hiw-number">3</span>
+              </div>
+              <div className="hiw-card">
+                <div className="hiw-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </div>
+                <h3 className="text-[18px] md:text-[22px] font-bold text-[#1a1a1a] mb-2 leading-tight tracking-tight">Launch &amp; Scale</h3>
+                <p className="text-[14px] md:text-[16px] text-[#4a4a4a] leading-relaxed">Go live in weeks, not months. We provide 30-day support and help you scale automation across more trade lanes.</p>
+              </div>
             </div>
           </div>
         </div>
