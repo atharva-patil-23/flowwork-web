@@ -198,3 +198,380 @@
 .fade-edges {
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
+
+/* ═══════════ SERVICE CARD MICROINTERACTIONS ═══════════ */
+
+@keyframes svcFloat1 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, -10px);
+  }
+}
+
+@keyframes svcFloat2 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(6px, -8px);
+  }
+}
+
+@keyframes svcFloat3 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-5px, -12px);
+  }
+}
+
+@keyframes svcFloat4 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(4px, 8px);
+  }
+}
+
+@keyframes svcPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+@keyframes svcBlink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes svcTypeLine {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes svcStepSlide {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes svcConnectorPulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes svcOrbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.svc-float-1 {
+  animation: svcFloat1 3s ease-in-out infinite;
+}
+
+.svc-float-2 {
+  animation: svcFloat2 3.5s ease-in-out infinite 0.3s;
+}
+
+.svc-float-3 {
+  animation: svcFloat3 4s ease-in-out infinite 0.6s;
+}
+
+.svc-float-4 {
+  animation: svcFloat4 3.2s ease-in-out infinite 0.9s;
+}
+
+.svc-pulse {
+  animation: svcPulse 3s ease-in-out infinite;
+}
+
+.svc-blink {
+  animation: svcBlink 1s step-end infinite;
+}
+
+.svc-step-1 {
+  animation: svcStepSlide 3s ease-in-out infinite;
+}
+
+.svc-step-2 {
+  animation: svcStepSlide 3s ease-in-out infinite 0.5s;
+}
+
+.svc-step-3 {
+  animation: svcStepSlide 3s ease-in-out infinite 1s;
+}
+
+.svc-connector-pulse {
+  animation: svcConnectorPulse 2s ease-in-out infinite;
+}
+
+.svc-orbit {
+  animation: svcOrbitSpin 20s linear infinite;
+}
+
+/* Illustration panel inside each service card */
+.svc-illustration {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Subtle grid overlay on dark panels */
+.svc-illustration::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+/* Floating icon chip */
+.svc-icon-chip {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.svc-icon-chip svg {
+  width: 18px;
+  height: 18px;
+  stroke: #b0b0b0;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+/* Center hub icon */
+.svc-hub {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #c8f74a, #8bc34a);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 24px rgba(200, 247, 74, 0.25);
+  z-index: 2;
+}
+
+.svc-hub svg {
+  width: 24px;
+  height: 24px;
+  stroke: #1a1a1a;
+  fill: none;
+  stroke-width: 2;
+}
+
+/* Code editor styles */
+.svc-code-editor {
+  width: 85%;
+  max-width: 260px;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.svc-code-line {
+  display: flex;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.svc-line-num {
+  color: #555;
+  min-width: 14px;
+  text-align: right;
+  user-select: none;
+}
+
+.svc-code-keyword {
+  color: #c8f74a;
+  font-weight: 700;
+}
+
+.svc-code-class {
+  color: #e8e4dc;
+  font-weight: 700;
+}
+
+.svc-code-type {
+  color: #8bc34a;
+}
+
+.svc-code-prop {
+  color: #999;
+}
+
+.svc-code-func {
+  color: #c8f74a;
+  font-weight: 700;
+}
+
+.svc-code-str {
+  color: #ce9178;
+}
+
+.svc-code-punct {
+  color: #666;
+}
+
+.svc-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 14px;
+  background: #c8f74a;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+/* Workflow step card */
+.svc-step-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  padding: 10px 18px;
+  min-width: 140px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.svc-step-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svc-step-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.svc-step-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ddd;
+  white-space: nowrap;
+}
+
+/* Connector line between workflow steps */
+.svc-connector {
+  width: 2px;
+  height: 14px;
+  background: #3a3a3a;
+  margin: 0 auto;
+}
+
+/* Fourth card: orbiting dots */
+.svc-orbit-ring {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 1px dashed rgba(200, 247, 74, 0.15);
+  border-radius: 50%;
+}
+
+.svc-orbit-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #c8f74a;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(200, 247, 74, 0.4);
+}
+
+.svc-data-node {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svc-data-node svg {
+  width: 16px;
+  height: 16px;
+  stroke: #8bc34a;
+  fill: none;
+  stroke-width: 1.5;
+}

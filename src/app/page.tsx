@@ -47,50 +47,100 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-            {/* Service 1 */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-12 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
-              <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-8">
-                <svg className="w-6 h-6 text-[#1a1a1a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z" />
-                </svg>
+            {/* Service 1 — Document Automation */}
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+              {/* Animated illustration */}
+              <div className="svc-illustration">
+                {/* Center hub */}
+                <div className="svc-hub svc-pulse">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z" /></svg>
+                </div>
+                {/* Floating icon chips */}
+                <div className="svc-icon-chip svc-float-1" style={{ top: '24px', right: '28%' }}>
+                  <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="9" y1="12" x2="15" y2="12" /><line x1="9" y1="16" x2="12" y2="16" /></svg>
+                </div>
+                <div className="svc-icon-chip svc-float-2" style={{ bottom: '28px', left: '20%' }}>
+                  <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z" /></svg>
+                </div>
+                <div className="svc-icon-chip svc-float-3" style={{ top: '30px', left: '18%' }}>
+                  <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M9 3v18" /><path d="M3 9h6" /></svg>
+                </div>
+                <div className="svc-icon-chip svc-float-4" style={{ bottom: '24px', right: '22%' }}>
+                  <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" /></svg>
+                </div>
               </div>
               <h3 className="text-[20px] md:text-[24px] font-bold text-[#1a1a1a] mb-3 leading-tight tracking-tight">Document Automation</h3>
               <p className="text-[16px] text-[#4a4a4a] leading-relaxed">Auto-generate invoices, packing lists, certificates of origin, and HS code classifications in seconds.</p>
             </div>
 
-            {/* Service 2 */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-12 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
-              <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-8">
-                <svg className="w-6 h-6 text-[#1a1a1a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <polyline points="16 18 22 12 16 6" />
-                  <polyline points="8 6 2 12 8 18" />
-                </svg>
+            {/* Service 2 — Workflow Automation (code editor) */}
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+              <div className="svc-illustration">
+                <div className="svc-code-editor">
+                  <div className="svc-code-line"><span className="svc-line-num">1</span><span><span className="svc-code-keyword">Class</span> <span className="svc-code-class">Workflow</span><span className="svc-code-punct">{'{'}</span></span></div>
+                  <div className="svc-code-line"><span className="svc-line-num">2</span><span>&nbsp;&nbsp;<span className="svc-code-type">string</span> <span className="svc-code-prop">trigger</span><span className="svc-code-punct">;</span></span></div>
+                  <div className="svc-code-line"><span className="svc-line-num">3</span><span>&nbsp;&nbsp;<span className="svc-code-type">list</span> <span className="svc-code-prop">actions</span><span className="svc-code-punct">;</span></span></div>
+                  <div className="svc-code-line"><span className="svc-line-num">4</span><span>&nbsp;&nbsp;<span className="svc-code-keyword">constructor</span><span className="svc-code-punct">(){'{'}</span></span></div>
+                  <div className="svc-code-line"><span className="svc-line-num">5</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span className="svc-code-prop">trigger</span> <span className="svc-code-punct">=</span> <span className="svc-code-str">msg.event</span><span className="svc-code-punct">;</span></span></div>
+                  <div className="svc-code-line"><span className="svc-line-num">6</span><span>&nbsp;&nbsp;<span className="svc-code-punct">{'}'}</span></span></div>
+                  <div className="svc-code-line"><span className="svc-line-num">7</span><span>&nbsp;&nbsp;<span className="svc-code-keyword">function</span> <span className="svc-code-func">execute</span><span className="svc-code-punct">(msg){'{'}</span><span className="svc-cursor svc-blink" /></span></div>
+                </div>
               </div>
               <h3 className="text-[20px] md:text-[24px] font-bold text-[#1a1a1a] mb-3 leading-tight tracking-tight">Workflow Automation</h3>
               <p className="text-[16px] text-[#4a4a4a] leading-relaxed">Connect your ERP, freight tools, and CRM into one seamless automated operation.</p>
             </div>
 
-            {/* Service 3 */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-12 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
-              <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-8">
-                <svg className="w-6 h-6 text-[#1a1a1a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-                  <polyline points="17 8 12 3 7 8" />
-                  <line x1="12" y1="3" x2="12" y2="15" />
-                </svg>
+            {/* Service 3 — AI Lead Generation (workflow steps) */}
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+              <div className="svc-illustration">
+                <div className="flex flex-col items-center gap-0">
+                  {/* Step 1 */}
+                  <div className="svc-step-card svc-step-1">
+                    <div className="svc-step-icon"><svg viewBox="0 0 24 24" stroke="#8bc34a"><circle cx="12" cy="12" r="4" /><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" /></svg></div>
+                    <span className="svc-step-label">Trigger</span>
+                  </div>
+                  <div className="svc-connector svc-connector-pulse" />
+                  {/* Step 2 */}
+                  <div className="svc-step-card svc-step-2">
+                    <div className="svc-step-icon"><svg viewBox="0 0 24 24" stroke="#c8f74a"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" /></svg></div>
+                    <span className="svc-step-label">Qualify Leads</span>
+                  </div>
+                  <div className="svc-connector svc-connector-pulse" />
+                  {/* Step 3 */}
+                  <div className="svc-step-card svc-step-3">
+                    <div className="svc-step-icon"><svg viewBox="0 0 24 24" stroke="#8bc34a"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg></div>
+                    <span className="svc-step-label">Send Email</span>
+                  </div>
+                </div>
               </div>
               <h3 className="text-[20px] md:text-[24px] font-bold text-[#1a1a1a] mb-3 leading-tight tracking-tight">AI Lead Generation</h3>
               <p className="text-[16px] text-[#4a4a4a] leading-relaxed">AI agents find, qualify, and follow up with importers and distributors across your target markets.</p>
             </div>
 
-            {/* Service 4 */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-12 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
-              <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-8">
-                <svg className="w-6 h-6 text-[#1a1a1a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                  <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
-                </svg>
+            {/* Service 4 — Custom AI Agents (orbiting nodes) */}
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+              <div className="svc-illustration">
+                {/* Orbit rings */}
+                <div className="svc-orbit-ring svc-orbit" style={{ width: '130px', height: '130px' }}>
+                  <div className="svc-orbit-dot" style={{ top: '-5px', left: '50%', marginLeft: '-5px' }} />
+                </div>
+                <div className="svc-orbit-ring" style={{ width: '80px', height: '80px', borderColor: 'rgba(200,247,74,0.1)', animation: 'svcOrbitSpin 15s linear infinite reverse' }}>
+                  <div className="svc-orbit-dot" style={{ bottom: '-5px', left: '50%', marginLeft: '-5px', width: '7px', height: '7px' }} />
+                </div>
+                {/* Center brain hub */}
+                <div className="svc-hub svc-pulse" style={{ zIndex: 3 }}>
+                  <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z" /><line x1="9" y1="21" x2="15" y2="21" /></svg>
+                </div>
+                {/* Floating data nodes */}
+                <div className="svc-data-node svc-float-1" style={{ top: '20px', left: '15%' }}>
+                  <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
+                </div>
+                <div className="svc-data-node svc-float-3" style={{ bottom: '20px', right: '15%' }}>
+                  <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2" /><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" /></svg>
+                </div>
+                <div className="svc-data-node svc-float-2" style={{ top: '22px', right: '12%' }}>
+                  <svg viewBox="0 0 24 24"><path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" /></svg>
+                </div>
               </div>
               <h3 className="text-[20px] md:text-[24px] font-bold text-[#1a1a1a] mb-3 leading-tight tracking-tight">Custom AI Agents</h3>
               <p className="text-[16px] text-[#4a4a4a] leading-relaxed">Bespoke AI systems trained on your trade lanes, products, and compliance rules.</p>
