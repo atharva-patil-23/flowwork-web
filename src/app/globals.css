@@ -575,3 +575,57 @@
   fill: none;
   stroke-width: 1.5;
 }
+
+/* Responsive illustration panels */
+@media (max-width: 639px) {
+  .svc-illustration {
+    height: 170px;
+  }
+
+  .svc-code-editor {
+    font-size: 10px;
+    max-width: 220px;
+  }
+
+  .svc-icon-chip {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+  }
+
+  .svc-icon-chip svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .svc-hub {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .svc-hub svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .svc-step-card {
+    padding: 8px 14px;
+    min-width: 120px;
+  }
+
+  .svc-step-label {
+    font-size: 12px;
+  }
+
+  .svc-data-node {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .svc-data-node svg {
+    width: 14px;
+    height: 14px;
+  }
+}

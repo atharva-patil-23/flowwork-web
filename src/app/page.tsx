@@ -9,27 +9,27 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* ═══════════ HERO ═══════════ */}
-      <section className="relative flex flex-col items-center justify-center text-center min-h-screen w-full px-4 overflow-hidden pt-20">
+      <section className="relative flex flex-col items-center justify-center text-center min-h-screen w-full px-5 sm:px-6 overflow-hidden pt-24 sm:pt-20">
         <div className="relative z-20 flex flex-col items-center mt-12 lg:mt-0 pointer-events-none">
-          <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-black/5 text-black/60 text-[13px] font-bold tracking-wide uppercase shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_2px_8px_rgba(0,0,0,0.03)] border border-black/5 backdrop-blur-md mb-8 pointer-events-auto">
+          <div className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-full bg-black/5 text-black/60 text-[11px] sm:text-[13px] font-bold tracking-wide uppercase shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_2px_8px_rgba(0,0,0,0.03)] border border-black/5 backdrop-blur-md mb-6 sm:mb-8 pointer-events-auto text-center">
             Move goods faster. Let AI handle the paperwork.
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
           </div>
 
-          <h1 className="text-[40px] md:text-[60px] lg:text-[76px] font-extrabold text-[#1a1a1a] leading-[1.1] tracking-[-0.04em] mb-6 max-w-[800px] pointer-events-auto">
-            Trade Automation that<br />Delivers Measurable{" "}
+          <h1 className="text-[32px] sm:text-[40px] md:text-[60px] lg:text-[76px] font-extrabold text-[#1a1a1a] leading-[1.1] tracking-[-0.04em] mb-5 sm:mb-6 max-w-[800px] pointer-events-auto px-2">
+            Trade Automation that<br className="hidden sm:block" /><span className="sm:hidden"> </span>Delivers Measurable{" "}
             <span className="text-[#8bc34a] [text-shadow:0_4px_24px_rgba(139,195,74,0.3)]">
               ROI
             </span>
           </h1>
 
-          <p className="text-[18px] md:text-[22px] text-[#4a4a4a] leading-[1.5] max-w-[650px] mb-10 font-medium tracking-tight pointer-events-auto">
+          <p className="text-[16px] sm:text-[18px] md:text-[22px] text-[#4a4a4a] leading-[1.5] max-w-[650px] mb-8 sm:mb-10 font-medium tracking-tight pointer-events-auto px-2">
             We help importers, distributors, and export trading companies automate their operations with AI — from compliance to lead generation.
           </p>
 
           <Link
             href="#cta"
-            className="inline-flex items-center justify-center bg-[#c8f74a] text-black px-8 py-4 rounded-full text-[16px] font-bold shadow-[0_4px_16px_rgba(200,247,74,0.3)] hover:bg-[#bceb42] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(200,247,74,0.5)] transition-all duration-300 pointer-events-auto"
+            className="inline-flex items-center justify-center bg-[#c8f74a] text-black px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-[14px] sm:text-[16px] font-bold shadow-[0_4px_16px_rgba(200,247,74,0.3)] hover:bg-[#bceb42] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(200,247,74,0.5)] transition-all duration-300 pointer-events-auto"
           >
             Start Your AI Transformation →
           </Link>
@@ -39,16 +39,16 @@ export default function Home() {
       </section>
 
       {/* ═══════════ SERVICES ═══════════ */}
-      <section id="services" className="w-full py-24 md:py-32 px-4 md:px-[5%] flex flex-col items-center">
+      <section id="services" className="w-full py-16 sm:py-24 md:py-32 px-5 sm:px-6 md:px-[5%] flex flex-col items-center">
         <div className="w-full max-w-[1100px]">
           <p className="text-[#8bc34a] text-[13px] font-bold tracking-widest uppercase mb-4 text-center">Our Services</p>
-          <h2 className="text-[32px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-tight tracking-[-0.02em] mb-16 text-center">
-            Your Trusted Partner<br />for Trade Automation
+          <h2 className="text-[28px] sm:text-[32px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-tight tracking-[-0.02em] mb-10 sm:mb-16 text-center">
+            Your Trusted Partner<br className="hidden sm:block" /><span className="sm:hidden"> </span>for Trade Automation
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             {/* Service 1 — Document Automation */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
               {/* Animated illustration */}
               <div className="svc-illustration">
                 {/* Center hub */}
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
 
             {/* Service 2 — Workflow Automation (code editor) */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
               <div className="svc-illustration">
                 <div className="svc-code-editor">
                   <div className="svc-code-line"><span className="svc-line-num">1</span><span><span className="svc-code-keyword">Class</span> <span className="svc-code-class">Workflow</span><span className="svc-code-punct">{'{'}</span></span></div>
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
             {/* Service 3 — AI Lead Generation (workflow steps) */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
               <div className="svc-illustration">
                 <div className="flex flex-col items-center gap-0">
                   {/* Step 1 */}
@@ -118,7 +118,7 @@ export default function Home() {
             </div>
 
             {/* Service 4 — Custom AI Agents (orbiting nodes) */}
-            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[24px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
+            <div className="bg-[#e8e4dc] border border-[#d8d3c8] rounded-[20px] sm:rounded-[24px] p-6 sm:p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#c8c3b8]">
               <div className="svc-illustration">
                 {/* Orbit rings */}
                 <div className="svc-orbit-ring svc-orbit" style={{ width: '130px', height: '130px' }}>
@@ -150,13 +150,13 @@ export default function Home() {
       </section>
 
       {/* ═══════════ PROBLEM / MARQUEE ═══════════ */}
-      <section id="problem" className="w-full py-24 md:py-32 flex flex-col items-center overflow-hidden">
-        <div className="text-center px-4 md:px-0 mb-16">
+      <section id="problem" className="w-full py-16 sm:py-24 md:py-32 flex flex-col items-center overflow-hidden">
+        <div className="text-center px-5 sm:px-6 md:px-0 mb-10 sm:mb-16">
           <p className="text-[#8bc34a] text-[13px] font-bold tracking-widest uppercase mb-4">The Problem</p>
-          <h2 className="text-[32px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-tight tracking-[-0.02em] mb-4">
-            Hidden Barriers of<br />Trade Efficiency
+          <h2 className="text-[28px] sm:text-[32px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-tight tracking-[-0.02em] mb-4">
+            Hidden Barriers of<br className="hidden sm:block" /><span className="sm:hidden"> </span>Trade Efficiency
           </h2>
-          <p className="text-[18px] md:text-[20px] text-[#4a4a4a] leading-[1.5] max-w-[600px] mx-auto font-medium tracking-tight">
+          <p className="text-[16px] sm:text-[18px] md:text-[20px] text-[#4a4a4a] leading-[1.5] max-w-[600px] mx-auto font-medium tracking-tight">
             Running import/export operations comes with endless friction around compliance, documentation, and lead generation.
           </p>
         </div>
@@ -220,11 +220,11 @@ export default function Home() {
       </section>
 
       {/* ═══════════ FAQ ═══════════ */}
-      <section id="faq" className="w-full py-24 md:py-32 px-4 md:px-[5%] flex flex-col items-center">
+      <section id="faq" className="w-full py-16 sm:py-24 md:py-32 px-5 sm:px-6 md:px-[5%] flex flex-col items-center">
         <div className="w-full max-w-[800px]">
           <p className="text-[#8bc34a] text-[13px] font-bold tracking-widest uppercase mb-4 text-center">FAQ</p>
-          <h2 className="text-[32px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-tight tracking-[-0.02em] mb-16 text-center">
-            Questions we hear<br />every time
+          <h2 className="text-[28px] sm:text-[32px] md:text-[52px] font-extrabold text-[#1a1a1a] leading-tight tracking-[-0.02em] mb-10 sm:mb-16 text-center">
+            Questions we hear<br className="hidden sm:block" /><span className="sm:hidden"> </span>every time
           </h2>
 
           <div className="flex flex-col gap-4">
@@ -239,55 +239,54 @@ export default function Home() {
       </section>
 
       {/* ═══════════ CTA BANNER ═══════════ */}
-      <section id="cta" className="w-full py-16 px-4 md:px-[5%] flex justify-center mb-16">
-        <div className="w-full max-w-[1100px] bg-gradient-to-br from-[#c6f452] to-[#a2cc3c] rounded-[32px] md:rounded-[40px] p-10 md:p-20 relative overflow-hidden flex flex-col justify-center items-center md:items-start text-center md:text-left [clip-path:polygon(4%_0,100%_0,100%_96%,96%_100%,0_100%,0_4%)]">
-          <h2 className="text-[32px] md:text-[48px] font-extrabold text-[#1a1a1a] leading-[1.05] tracking-tight mb-5 max-w-[500px]">
-            Start Your Trade Transformation<br />with a Free AI Audit!
+      <section id="cta" className="w-full py-10 sm:py-16 px-5 sm:px-6 md:px-[5%] flex justify-center mb-10 sm:mb-16">
+        <div className="w-full max-w-[1100px] bg-gradient-to-br from-[#c6f452] to-[#a2cc3c] rounded-[24px] sm:rounded-[32px] md:rounded-[40px] p-8 sm:p-10 md:p-20 relative overflow-hidden flex flex-col justify-center items-center md:items-start text-center md:text-left">
+          <h2 className="text-[26px] sm:text-[32px] md:text-[48px] font-extrabold text-[#1a1a1a] leading-[1.05] tracking-tight mb-4 sm:mb-5 max-w-[500px]">
+            Start Your Trade Transformation<br className="hidden sm:block" /><span className="sm:hidden"> </span>with a Free AI Audit!
           </h2>
-          <p className="text-[17px] text-[#2a2a2a] leading-[1.4] max-w-[420px] mb-8 font-medium">
+          <p className="text-[15px] sm:text-[17px] text-[#2a2a2a] leading-[1.4] max-w-[420px] mb-6 sm:mb-8 font-medium">
             A free assessment that uncovers automation opportunities and maps your path to operational excellence.
           </p>
-          <a href="https://cal.com/lavparab/free-ai-automation-audit-with-lavparab" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-white text-black px-8 py-4 rounded-full text-[16px] font-bold shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300">
+          <a href="https://cal.com/lavparab/free-ai-automation-audit-with-lavparab" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-white text-black px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-[14px] sm:text-[16px] font-bold shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300">
             Book a Free Audit
           </a>
 
-          <div className="absolute -bottom-12 -right-12 md:top-1/4 md:-right-20 text-[100px] md:text-[180px] font-black text-black/5 tracking-tighter leading-none select-none pointer-events-none">
+          <div className="absolute -bottom-12 -right-12 md:top-1/4 md:-right-20 text-[60px] sm:text-[100px] md:text-[180px] font-black text-black/5 tracking-tighter leading-none select-none pointer-events-none">
             flowwork
           </div>
         </div>
       </section>
 
       {/* ═══════════ FOOTER ═══════════ */}
-      <footer className="w-full bg-[#e8e4dc] px-4 md:px-[5%] pt-20 pb-8 flex flex-col items-center">
-        <div className="w-full max-w-[1100px] flex flex-col md:flex-row justify-between pb-16 border-b border-[#d8d3c8] gap-12">
+      <footer className="w-full bg-[#e8e4dc] px-5 sm:px-6 md:px-[5%] pt-14 sm:pt-20 pb-8 flex flex-col items-center">
+        <div className="w-full max-w-[1100px] flex flex-col md:flex-row justify-between pb-10 sm:pb-16 border-b border-[#d8d3c8] gap-8 sm:gap-12">
           <div className="max-w-[340px]">
-            <div className="text-[28px] font-black tracking-[-1px] text-[#1a1a1a] mb-5 flex items-center gap-1">
+            <div className="text-[24px] sm:text-[28px] font-black tracking-[-1px] text-[#1a1a1a] mb-4 sm:mb-5 flex items-center gap-1">
               fl<span className="w-3 h-3 bg-[#c8f74a] rounded-full inline-block" />wwork
             </div>
-            <p className="text-[16px] text-[#555] leading-[1.5] mb-8 font-medium">
+            <p className="text-[14px] sm:text-[16px] text-[#555] leading-[1.5] mb-6 sm:mb-8 font-medium">
               We help importers and exporters automate operations with AI — from compliance to lead generation.
             </p>
-            {/* Social Icons would go here */}
           </div>
           <div className="max-w-[400px] w-full">
-            <label className="block text-[14px] font-bold text-[#1a1a1a] mb-5 uppercase tracking-wider">Contact Us</label>
+            <label className="block text-[13px] sm:text-[14px] font-bold text-[#1a1a1a] mb-4 sm:mb-5 uppercase tracking-wider">Contact Us</label>
 
             {/* LinkedIn Profiles */}
             <div className="flex flex-col gap-3 mb-5">
-              <a href="https://www.linkedin.com/in/atharva-patil-n23/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
-                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors">
+              <a href="https://www.linkedin.com/in/atharva-patil-n23/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[14px] sm:text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors shrink-0">
                   <svg className="w-4 h-4 text-[#0a66c2] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
                 </span>
                 Atharva Patil
               </a>
-              <a href="https://www.linkedin.com/in/lavparab/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
-                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors">
+              <a href="https://www.linkedin.com/in/lavparab/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[14px] sm:text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors shrink-0">
                   <svg className="w-4 h-4 text-[#0a66c2] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
                 </span>
                 Lav Parab
               </a>
-              <a href="https://www.linkedin.com/company/flowworkk/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
-                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors">
+              <a href="https://www.linkedin.com/company/flowworkk/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[14px] sm:text-[15px] font-semibold text-[#1a1a1a] hover:text-[#0a66c2] transition-colors group">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#0a66c2] transition-colors shrink-0">
                   <svg className="w-4 h-4 text-[#0a66c2] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
                 </span>
                 Flowwork
@@ -296,22 +295,22 @@ export default function Home() {
 
             {/* Email Addresses */}
             <div className="flex flex-col gap-2.5">
-              <a href="mailto:atharvapatil.flowwork@gmail.com" className="inline-flex items-center gap-2.5 text-[14px] font-medium text-[#555] hover:text-[#1a1a1a] transition-colors group">
-                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#1a1a1a] transition-colors">
+              <a href="mailto:atharvapatil.flowwork@gmail.com" className="inline-flex items-center gap-2.5 text-[12px] sm:text-[14px] font-medium text-[#555] hover:text-[#1a1a1a] transition-colors group min-w-0">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#1a1a1a] transition-colors shrink-0">
                   <svg className="w-4 h-4 text-[#555] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" /></svg>
                 </span>
-                atharvapatil.flowwork@gmail.com
+                <span className="truncate">atharvapatil.flowwork@gmail.com</span>
               </a>
-              <a href="mailto:lavparab.flowwork@gmail.com" className="inline-flex items-center gap-2.5 text-[14px] font-medium text-[#555] hover:text-[#1a1a1a] transition-colors group">
-                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#1a1a1a] transition-colors">
+              <a href="mailto:lavparab.flowwork@gmail.com" className="inline-flex items-center gap-2.5 text-[12px] sm:text-[14px] font-medium text-[#555] hover:text-[#1a1a1a] transition-colors group min-w-0">
+                <span className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#1a1a1a] transition-colors shrink-0">
                   <svg className="w-4 h-4 text-[#555] group-hover:text-white transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" /></svg>
                 </span>
-                lavparab.flowwork@gmail.com
+                <span className="truncate">lavparab.flowwork@gmail.com</span>
               </a>
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[1100px] pt-8 text-center text-[13px] font-bold text-[#888] uppercase tracking-wider">
+        <div className="w-full max-w-[1100px] pt-6 sm:pt-8 text-center text-[11px] sm:text-[13px] font-bold text-[#888] uppercase tracking-wider">
           © 2026 Copyright · Flowwork
         </div>
       </footer>
@@ -322,7 +321,7 @@ export default function Home() {
 // Subcomponents
 function MarqueePill({ text }: { text: string }) {
   return (
-    <div className="inline-flex shrink-0 min-w-max items-center gap-2.5 bg-white/40 backdrop-blur-md px-5 py-3 rounded-full border border-white/50 shadow-sm text-[#333] font-semibold text-[15px] whitespace-nowrap">
+    <div className="inline-flex shrink-0 min-w-max items-center gap-2 sm:gap-2.5 bg-white/40 backdrop-blur-md px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-full border border-white/50 shadow-sm text-[#333] font-semibold text-[13px] sm:text-[15px] whitespace-nowrap">
       <div className="flex items-center justify-center w-[22px] h-[22px] rounded-full bg-[#c8f74a] text-[#2a3d0a] text-[12px] font-black">?</div>
       {text}
     </div>
@@ -335,16 +334,16 @@ function FaqItem({ question, answer }: { question: string, answer: string }) {
     <div className="border border-[#d8d3c8] rounded-[16px] bg-[#fdfaf5] overflow-hidden transition-all duration-300">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left px-6 py-5 flex justify-between items-center bg-transparent border-none cursor-pointer"
+        className="w-full text-left px-4 sm:px-6 py-4 sm:py-5 flex justify-between items-center bg-transparent border-none cursor-pointer"
       >
-        <span className="text-[17px] font-bold text-[#1a1a1a] pr-4">{question}</span>
+        <span className="text-[15px] sm:text-[17px] font-bold text-[#1a1a1a] pr-4">{question}</span>
         <span className={`text-[24px] font-light text-[#1a1a1a] transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`}>+</span>
       </button>
       <div
         className="overflow-hidden transition-all duration-300 ease-in-out"
         style={{ maxHeight: isOpen ? "200px" : "0", opacity: isOpen ? 1 : 0 }}
       >
-        <div className="px-6 pb-6 pt-1 text-[16px] text-[#4a4a4a] leading-[1.6]">
+        <div className="px-4 sm:px-6 pb-5 sm:pb-6 pt-1 text-[14px] sm:text-[16px] text-[#4a4a4a] leading-[1.6]">
           {answer}
         </div>
       </div>
